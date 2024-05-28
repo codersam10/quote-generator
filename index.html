@@ -2,23 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Codedamn Playground</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script
+      src="script.js"
+      defer
+    ></script>
   </head>
   <body>
+    <div
+      id="popup"
+      class="popup"
+    >
+      Quote copied to clipboard!
+    </div>
     <header>
-      <h1 id="title"> Quote Generator App </h1>
-      <span onclick="themeChange()" id="theme" class="material-symbols-outlined">
+      <h1 id="title">Quote Generator App</h1>
+      <span
+        onclick="themeChange()"
+        id="theme"
+        class="material-symbols-outlined"
+      >
         dark_mode
-        </span>
-    </header> 
-    <div onclick="copyQuote()" class="quote-box" title="Copy">
+      </span>
+    </header>
+    <div
+      onclick="copyQuote()"
+      class="quote-box"
+      title="Copy"
+    >
       <p id="quote">When I let go of what I am, I become what I might be.</p>
       <small id="author">- Laozi</small>
     </div>
-    <button id="btn" onclick="getQuote()">Generate</button>
-</body>
+    <button
+      id="btn"
+      onclick="getQuote()"
+    >
+      Generate
+    </button>
+  </body>
 </html>

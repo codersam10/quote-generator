@@ -25,6 +25,26 @@ body {
   text-align:center;
 }
 
+/* popup  */
+.popup {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s ;
+}
+
+.popup.show {
+  transform: translateY(-15px);
+  visibility: visible;
+  opacity: 1;
+}
+
+
 #title{
   background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
   -webkit-background-clip: text;
