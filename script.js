@@ -56,3 +56,11 @@ const getQuote = async()=>{
     }
 }
 
+//copying quote
+const copyQuote = ()=>{
+    const quoteText = `${quote.innerText}`
+    navigator.clipboard.writeText(quoteText)
+    alert("Quote copied to clipboard!")
+
+}
+

@@ -11,14 +11,14 @@
   <body>
     <header>
       <h1 id="title"> Quote Generator App </h1>
-      <span onClick="themeChange()" id="theme" class="material-symbols-outlined">
+      <span onclick="themeChange()" id="theme" class="material-symbols-outlined">
         dark_mode
         </span>
     </header> 
-    <div class="quote-box" title="Copy">
+    <div onclick="copyQuote()" class="quote-box" title="Copy">
       <p id="quote">When I let go of what I am, I become what I might be.</p>
       <small id="author">- Laozi</small>
     </div>
-    <button id="btn" onClick="getQuote()">Generate</button>
+    <button id="btn" onclick="getQuote()">Generate</button>
 </body>
 </html>
