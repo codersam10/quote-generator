@@ -48,8 +48,10 @@ body {
 #title{
   background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: hue 10s infinite linear;
+  animation: hue 10s infinite linear;
 }
 
 header{
@@ -73,6 +75,16 @@ header > span {
    -webkit-filter: hue-rotate(-360deg);
   }
 }
+
+@keyframes hue {
+  from {
+   -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+   -webkit-filter: hue-rotate(-360deg);
+  }
+}styles
 
 .quote-box{
   max-width:400px;
